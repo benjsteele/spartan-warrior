@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Larger tap targets for number inputs on phones */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
